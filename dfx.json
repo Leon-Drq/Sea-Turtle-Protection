@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "turtle_backend": {
+      "main": "src/turtle_backend/main.mo",
+      "type": "motoko"
+    },
+    "turtle_frontend": {
+      "dependencies": [
+        "turtle_backend"
+      ],
+      "source": [
+        "src/turtle_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "turtle_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
